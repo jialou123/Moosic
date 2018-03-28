@@ -14,6 +14,7 @@
 		2979B820206C46DC00DC88FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2979B81E206C46DC00DC88FC /* LaunchScreen.storyboard */; };
 		2979B82B206C46DC00DC88FC /* MusicnMoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B82A206C46DC00DC88FC /* MusicnMoodTests.swift */; };
 		2979B836206C46DC00DC88FC /* MusicnMoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B835206C46DC00DC88FC /* MusicnMoodUITests.swift */; };
+		2979B848206C4F5D00DC88FC /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B847206C4F5D00DC88FC /* SignUpPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2979B831206C46DC00DC88FC /* MusicnMoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicnMoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2979B835206C46DC00DC88FC /* MusicnMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicnMoodUITests.swift; sourceTree = "<group>"; };
 		2979B837206C46DC00DC88FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2979B847206C4F5D00DC88FC /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2979B81C206C46DC00DC88FC /* Assets.xcassets */,
 				2979B81E206C46DC00DC88FC /* LaunchScreen.storyboard */,
 				2979B821206C46DC00DC88FC /* Info.plist */,
+				2979B847206C4F5D00DC88FC /* SignUpPage.swift */,
 			);
 			path = MusicnMood;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2979B848206C4F5D00DC88FC /* SignUpPage.swift in Sources */,
 				2979B818206C46DC00DC88FC /* ViewController.swift in Sources */,
 				2979B816206C46DC00DC88FC /* AppDelegate.swift in Sources */,
 			);
