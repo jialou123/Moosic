@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpPage: UIViewController {
-
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,18 @@ class SignUpPage: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func signup(_ sender: UIButton) {
+        Auth.auth().createUser(withEmail: username.text!, password: password.text!) { (user, error) in
+            if error != nil{
+                print(error!)
+            }else{
+                print("registeration success")
+                self.performSegue(withIdentifier: "signUpGoToMe", sender: self)
+                
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

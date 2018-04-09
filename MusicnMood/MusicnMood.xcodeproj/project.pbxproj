@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5DFDA420768D1B007E5104 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DFDA320768D1B007E5104 /* MapViewController.swift */; };
+		1B62117620796DD300DF6B2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B62117520796DD300DF6B2F /* GoogleService-Info.plist */; };
+		1B62117C2079A5F300DF6B2F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B62117B2079A5F300DF6B2F /* LoginController.swift */; };
 		2979B816206C46DC00DC88FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B815206C46DC00DC88FC /* AppDelegate.swift */; };
 		2979B818206C46DC00DC88FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B817206C46DC00DC88FC /* ViewController.swift */; };
 		2979B81B206C46DC00DC88FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2979B819206C46DC00DC88FC /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		2979B82B206C46DC00DC88FC /* MusicnMoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B82A206C46DC00DC88FC /* MusicnMoodTests.swift */; };
 		2979B836206C46DC00DC88FC /* MusicnMoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B835206C46DC00DC88FC /* MusicnMoodUITests.swift */; };
 		2979B848206C4F5D00DC88FC /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B847206C4F5D00DC88FC /* SignUpPage.swift */; };
+		A4BD4D60B87E252572F5BFE0 /* libPods-MusicnMood.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0DAE616F57375C9281994D /* libPods-MusicnMood.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B5DFDA320768D1B007E5104 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1B62117520796DD300DF6B2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B62117B2079A5F300DF6B2F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1EABA2721AE50EDA161F6DAE /* Pods-MusicnMood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicnMood.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicnMood/Pods-MusicnMood.release.xcconfig"; sourceTree = "<group>"; };
 		2979B812206C46DC00DC88FC /* MusicnMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicnMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2979B815206C46DC00DC88FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2979B817206C46DC00DC88FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		2979B835206C46DC00DC88FC /* MusicnMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicnMoodUITests.swift; sourceTree = "<group>"; };
 		2979B837206C46DC00DC88FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2979B847206C4F5D00DC88FC /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		AE0DAE616F57375C9281994D /* libPods-MusicnMood.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicnMood.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9669399A60B24BD0455CAB7 /* Pods-MusicnMood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicnMood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicnMood/Pods-MusicnMood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BD4D60B87E252572F5BFE0 /* libPods-MusicnMood.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,8 @@
 				2979B829206C46DC00DC88FC /* MusicnMoodTests */,
 				2979B834206C46DC00DC88FC /* MusicnMoodUITests */,
 				2979B813206C46DC00DC88FC /* Products */,
+				4E7B71A387DF2306483C1EF4 /* Pods */,
+				2A49FA5FA8BABB5D08BA02BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,9 +115,12 @@
 				2979B815206C46DC00DC88FC /* AppDelegate.swift */,
 				2979B817206C46DC00DC88FC /* ViewController.swift */,
 				2979B819206C46DC00DC88FC /* Main.storyboard */,
+				1B62117B2079A5F300DF6B2F /* LoginController.swift */,
+				1B5DFDA320768D1B007E5104 /* MapViewController.swift */,
 				2979B81C206C46DC00DC88FC /* Assets.xcassets */,
 				2979B81E206C46DC00DC88FC /* LaunchScreen.storyboard */,
 				2979B821206C46DC00DC88FC /* Info.plist */,
+				1B62117520796DD300DF6B2F /* GoogleService-Info.plist */,
 				2979B847206C4F5D00DC88FC /* SignUpPage.swift */,
 			);
 			path = MusicnMood;
@@ -128,6 +144,23 @@
 			path = MusicnMoodUITests;
 			sourceTree = "<group>";
 		};
+		2A49FA5FA8BABB5D08BA02BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE0DAE616F57375C9281994D /* libPods-MusicnMood.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E7B71A387DF2306483C1EF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9669399A60B24BD0455CAB7 /* Pods-MusicnMood.debug.xcconfig */,
+				1EABA2721AE50EDA161F6DAE /* Pods-MusicnMood.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2979B83A206C46DC00DC88FC /* Build configuration list for PBXNativeTarget "MusicnMood" */;
 			buildPhases = (
+				1D7EF4E6B76722E65FDFFA4D /* [CP] Check Pods Manifest.lock */,
 				2979B80E206C46DC00DC88FC /* Sources */,
 				2979B80F206C46DC00DC88FC /* Frameworks */,
 				2979B810206C46DC00DC88FC /* Resources */,
+				C8EE37BF3CBCC7C7EC5C5A79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Tony Jojan";
 				TargetAttributes = {
 					2979B811206C46DC00DC88FC = {
@@ -236,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2979B820206C46DC00DC88FC /* LaunchScreen.storyboard in Resources */,
+				1B62117620796DD300DF6B2F /* GoogleService-Info.plist in Resources */,
 				2979B81D206C46DC00DC88FC /* Assets.xcassets in Resources */,
 				2979B81B206C46DC00DC88FC /* Main.storyboard in Resources */,
 			);
@@ -257,6 +293,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D7EF4E6B76722E65FDFFA4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicnMood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8EE37BF3CBCC7C7EC5C5A79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MusicnMood/Pods-MusicnMood-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicnMood/Pods-MusicnMood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2979B80E206C46DC00DC88FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +344,8 @@
 				2979B848206C4F5D00DC88FC /* SignUpPage.swift in Sources */,
 				2979B818206C46DC00DC88FC /* ViewController.swift in Sources */,
 				2979B816206C46DC00DC88FC /* AppDelegate.swift in Sources */,
+				1B5DFDA420768D1B007E5104 /* MapViewController.swift in Sources */,
+				1B62117C2079A5F300DF6B2F /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +414,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -340,6 +422,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -390,6 +473,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -397,6 +481,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -428,6 +513,7 @@
 		};
 		2979B83B206C46DC00DC88FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9669399A60B24BD0455CAB7 /* Pods-MusicnMood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +529,7 @@
 		};
 		2979B83C206C46DC00DC88FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EABA2721AE50EDA161F6DAE /* Pods-MusicnMood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
