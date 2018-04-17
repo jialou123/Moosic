@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.1)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
@@ -55,8 +56,10 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - ChameleonFramework
   - Firebase
   - Firebase/Auth
@@ -64,9 +67,11 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - SVProgressHUD
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Alamofire
     - ChameleonFramework
     - Firebase
     - FirebaseAnalytics
@@ -81,8 +86,10 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - SVProgressHUD
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
@@ -97,7 +104,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 463ebef543dbf1c2a348bc44c46d09adf8ce35f8
+PODFILE CHECKSUM: a5f2cae548bacacb70f366f475b50808dc0653c0
 
 COCOAPODS: 1.5.0

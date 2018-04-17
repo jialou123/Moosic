@@ -1,0 +1,6 @@
+module Pods_MusicnMood [system] {
+  umbrella header "Pods-MusicnMood-umbrella.h"
+
+  export *
+  module * { export * }
+}

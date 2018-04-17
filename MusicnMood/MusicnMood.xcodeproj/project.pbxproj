@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B15317620809D1F008BEF54 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B15317520809D1E008BEF54 /* AVFoundation.framework */; };
+		1B15317820809D3F008BEF54 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B15317720809D3F008BEF54 /* SystemConfiguration.framework */; };
+		1B15317A2080B113008BEF54 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1531792080B113008BEF54 /* MusicViewController.swift */; };
+		1B1531822080BA86008BEF54 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B15317F2080BA85008BEF54 /* SpotifyMetadata.framework */; };
+		1B1531832080BA86008BEF54 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1531802080BA85008BEF54 /* SpotifyAudioPlayback.framework */; };
+		1B1531842080BA86008BEF54 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1531812080BA86008BEF54 /* SpotifyAuthentication.framework */; };
+		1B1531A92082B38C008BEF54 /* MoodScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1531A82082B38C008BEF54 /* MoodScanViewController.swift */; };
 		1B5DFDA420768D1B007E5104 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DFDA320768D1B007E5104 /* MapViewController.swift */; };
 		1B62117620796DD300DF6B2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B62117520796DD300DF6B2F /* GoogleService-Info.plist */; };
 		1B62117C2079A5F300DF6B2F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B62117B2079A5F300DF6B2F /* LoginController.swift */; };
+		1B867617207E19E100DD3735 /* NearbyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B867616207E19E100DD3735 /* NearbyTableViewController.swift */; };
+		1B86761F207E2AA600DD3735 /* nearbyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B86761D207E2AA600DD3735 /* nearbyTableViewCell.swift */; };
+		1B867620207E2AA600DD3735 /* nearbyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B86761E207E2AA600DD3735 /* nearbyTableViewCell.xib */; };
+		1BAD63B62086112B007A1BDB /* FaceAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD63B52086112B007A1BDB /* FaceAnalysisModel.swift */; };
 		2979B816206C46DC00DC88FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B815206C46DC00DC88FC /* AppDelegate.swift */; };
 		2979B818206C46DC00DC88FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979B817206C46DC00DC88FC /* ViewController.swift */; };
 		2979B81B206C46DC00DC88FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2979B819206C46DC00DC88FC /* Main.storyboard */; };
@@ -39,9 +50,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B15317520809D1E008BEF54 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1B15317720809D3F008BEF54 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1B1531792080B113008BEF54 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		1B15317B2080B13F008BEF54 /* MusicnMood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicnMood-Bridging-Header.h"; sourceTree = "<group>"; };
+		1B15317F2080BA85008BEF54 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		1B1531802080BA85008BEF54 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		1B1531812080BA86008BEF54 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		1B1531A82082B38C008BEF54 /* MoodScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodScanViewController.swift; sourceTree = "<group>"; };
 		1B5DFDA320768D1B007E5104 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1B62117520796DD300DF6B2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B62117B2079A5F300DF6B2F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1B867616207E19E100DD3735 /* NearbyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyTableViewController.swift; sourceTree = "<group>"; };
+		1B86761D207E2AA600DD3735 /* nearbyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nearbyTableViewCell.swift; sourceTree = "<group>"; };
+		1B86761E207E2AA600DD3735 /* nearbyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = nearbyTableViewCell.xib; sourceTree = "<group>"; };
+		1BAD63B52086112B007A1BDB /* FaceAnalysisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAnalysisModel.swift; sourceTree = "<group>"; };
 		1EABA2721AE50EDA161F6DAE /* Pods-MusicnMood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicnMood.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicnMood/Pods-MusicnMood.release.xcconfig"; sourceTree = "<group>"; };
 		2979B812206C46DC00DC88FC /* MusicnMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicnMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2979B815206C46DC00DC88FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +89,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1531822080BA86008BEF54 /* SpotifyMetadata.framework in Frameworks */,
+				1B1531842080BA86008BEF54 /* SpotifyAuthentication.framework in Frameworks */,
+				1B15317820809D3F008BEF54 /* SystemConfiguration.framework in Frameworks */,
+				1B15317620809D1F008BEF54 /* AVFoundation.framework in Frameworks */,
 				A4BD4D60B87E252572F5BFE0 /* libPods-MusicnMood.a in Frameworks */,
+				1B1531832080BA86008BEF54 /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +115,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B867618207E1BDB00DD3735 /* custome cell */ = {
+			isa = PBXGroup;
+			children = (
+				1B86761D207E2AA600DD3735 /* nearbyTableViewCell.swift */,
+				1B86761E207E2AA600DD3735 /* nearbyTableViewCell.xib */,
+			);
+			path = "custome cell";
+			sourceTree = "<group>";
+		};
+		1BC874AC207E14F500E1A1AC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B62117B2079A5F300DF6B2F /* LoginController.swift */,
+				1B5DFDA320768D1B007E5104 /* MapViewController.swift */,
+				2979B817206C46DC00DC88FC /* ViewController.swift */,
+				2979B847206C4F5D00DC88FC /* SignUpPage.swift */,
+				1B867616207E19E100DD3735 /* NearbyTableViewController.swift */,
+				1B1531792080B113008BEF54 /* MusicViewController.swift */,
+				1B15317B2080B13F008BEF54 /* MusicnMood-Bridging-Header.h */,
+				1B1531A82082B38C008BEF54 /* MoodScanViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1BC874AD207E156600E1A1AC /* plist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
 		2979B809206C46DB00DC88FC = {
 			isa = PBXGroup;
 			children = (
@@ -112,16 +171,19 @@
 		2979B814206C46DC00DC88FC /* MusicnMood */ = {
 			isa = PBXGroup;
 			children = (
+				1B1531802080BA85008BEF54 /* SpotifyAudioPlayback.framework */,
+				1B1531812080BA86008BEF54 /* SpotifyAuthentication.framework */,
+				1B15317F2080BA85008BEF54 /* SpotifyMetadata.framework */,
+				1B867618207E1BDB00DD3735 /* custome cell */,
+				1BC874AD207E156600E1A1AC /* plist */,
+				1BC874AC207E14F500E1A1AC /* ViewController */,
 				2979B815206C46DC00DC88FC /* AppDelegate.swift */,
-				2979B817206C46DC00DC88FC /* ViewController.swift */,
 				2979B819206C46DC00DC88FC /* Main.storyboard */,
-				1B62117B2079A5F300DF6B2F /* LoginController.swift */,
-				1B5DFDA320768D1B007E5104 /* MapViewController.swift */,
-				2979B81C206C46DC00DC88FC /* Assets.xcassets */,
-				2979B81E206C46DC00DC88FC /* LaunchScreen.storyboard */,
-				2979B821206C46DC00DC88FC /* Info.plist */,
 				1B62117520796DD300DF6B2F /* GoogleService-Info.plist */,
-				2979B847206C4F5D00DC88FC /* SignUpPage.swift */,
+				2979B821206C46DC00DC88FC /* Info.plist */,
+				2979B81E206C46DC00DC88FC /* LaunchScreen.storyboard */,
+				2979B81C206C46DC00DC88FC /* Assets.xcassets */,
+				1BAD63B52086112B007A1BDB /* FaceAnalysisModel.swift */,
 			);
 			path = MusicnMood;
 			sourceTree = "<group>";
@@ -147,6 +209,8 @@
 		2A49FA5FA8BABB5D08BA02BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B15317720809D3F008BEF54 /* SystemConfiguration.framework */,
+				1B15317520809D1E008BEF54 /* AVFoundation.framework */,
 				AE0DAE616F57375C9281994D /* libPods-MusicnMood.a */,
 			);
 			name = Frameworks;
@@ -231,6 +295,7 @@
 				TargetAttributes = {
 					2979B811206C46DC00DC88FC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					2979B825206C46DC00DC88FC = {
@@ -274,6 +339,7 @@
 				1B62117620796DD300DF6B2F /* GoogleService-Info.plist in Resources */,
 				2979B81D206C46DC00DC88FC /* Assets.xcassets in Resources */,
 				2979B81B206C46DC00DC88FC /* Main.storyboard in Resources */,
+				1B867620207E2AA600DD3735 /* nearbyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +409,12 @@
 			files = (
 				2979B848206C4F5D00DC88FC /* SignUpPage.swift in Sources */,
 				2979B818206C46DC00DC88FC /* ViewController.swift in Sources */,
+				1BAD63B62086112B007A1BDB /* FaceAnalysisModel.swift in Sources */,
+				1B867617207E19E100DD3735 /* NearbyTableViewController.swift in Sources */,
+				1B1531A92082B38C008BEF54 /* MoodScanViewController.swift in Sources */,
 				2979B816206C46DC00DC88FC /* AppDelegate.swift in Sources */,
+				1B15317A2080B113008BEF54 /* MusicViewController.swift in Sources */,
+				1B86761F207E2AA600DD3735 /* nearbyTableViewCell.swift in Sources */,
 				1B5DFDA420768D1B007E5104 /* MapViewController.swift in Sources */,
 				1B62117C2079A5F300DF6B2F /* LoginController.swift in Sources */,
 			);
@@ -516,12 +587,19 @@
 			baseConfigurationReference = D9669399A60B24BD0455CAB7 /* Pods-MusicnMood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZW99AD275;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MusicnMood",
+				);
 				INFOPLIST_FILE = MusicnMood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = musicviamood.MusicnMood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicnMood/ViewController/MusicnMood-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,12 +610,18 @@
 			baseConfigurationReference = 1EABA2721AE50EDA161F6DAE /* Pods-MusicnMood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZW99AD275;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MusicnMood",
+				);
 				INFOPLIST_FILE = MusicnMood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = musicviamood.MusicnMood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicnMood/ViewController/MusicnMood-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
