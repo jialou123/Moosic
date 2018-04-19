@@ -1,5 +1,10 @@
 PODS:
   - Alamofire (4.7.1)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - AlamoRecord (1.1.1):
+    - AlamofireObjectMapper (~> 5.0)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
@@ -55,6 +60,9 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - ObjectMapper (3.1.0)
+  - Spartan (1.1.1):
+    - AlamoRecord (~> 1.1.1)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.0.0)
 
@@ -66,12 +74,15 @@ DEPENDENCIES:
   - Firebase/Database
   - GoogleMaps
   - GooglePlaces
+  - Spartan
   - SVProgressHUD
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - AlamofireObjectMapper
+    - AlamoRecord
     - ChameleonFramework
     - Firebase
     - FirebaseAnalytics
@@ -85,11 +96,15 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - ObjectMapper
+    - Spartan
     - SVProgressHUD
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  AlamoRecord: 78653b9a5da21ab5bb723167e0f552994df85d30
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
@@ -103,9 +118,11 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  Spartan: 0e2518f937e590b0dff19350db133110d676ddf0
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: a5f2cae548bacacb70f366f475b50808dc0653c0
+PODFILE CHECKSUM: 51ade67a4996a0cbdfbddeab6a37cca0882cf0aa
 
 COCOAPODS: 1.5.0

@@ -7,16 +7,22 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import Spartan
+
 class MusicViewController:
     
 UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate {
 
+    @IBOutlet weak var More: UIBarButtonItem!
     @IBOutlet weak var spotify: UIButton!
     var auth = SPTAuth.defaultInstance()!
     var session:SPTSession!
     var player: SPTAudioStreamingController?
     var loginUrl: URL?
-    
+    var songid: String = "58s6EuEYJdlb0kO7awm3Vp"
+   // public static var authorizationToken: String = "..."
     
     @IBAction func spotifylogin(_ sender: UIButton) {
 //        let loginURL = SPTAuth.loginURL(forClientId: "2cf1d030727646deb8d901a1f8e7a1aa", withRedirectURL: NSURL(string: "Moosic://returnafterlogin")! as URL, scopes: [SPTAuthStreamingScope], responseType:"token")
@@ -41,6 +47,7 @@ UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.More.isEnabled = false
         setup()
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(MusicViewController.updateAfterFirstLogin), name: NSNotification.Name(rawValue: "loginSuccessfull"), object: nil)
@@ -52,7 +59,17 @@ UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate {
         let firstTimeSession = NSKeyedUnarchiver.unarchiveObject(with: sessionDataObj) as! SPTSession
         self.session = firstTimeSession
         initializePlayer(authSession: session)
+        Spartan.authorizationToken =  session.accessToken
+        _ = Spartan.search(query: "shape of you", type: .track, success: { (pagingObject: PagingObject<SimplifiedTrack>) in
+            // Get the tracks via pagingObject.items
+            print("1")
+            print(pagingObject.items[0].id)
+            self.songid = pagingObject.items[0].id as! String
+        }, failure: { (error) in
+            print(error)
+        })
         self.spotify.isHidden  = true
+         self.More.isEnabled = true
     }
         
     func initializePlayer(authSession:SPTSession){
@@ -67,12 +84,12 @@ UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate {
     
     func audioStreamingDidLogin(_ audioStreaming: SPTAudioStreamingController!) {
         // after a user authenticates a session, the SPTAudioStreamingController is then initialized and this method called
-        print("logged in")
-        self.player?.playSpotifyURI("spotify:track:58s6EuEYJdlb0kO7awm3Vp", startingWith: 0, startingWithPosition: 0, callback: { (error) in
+       // print("logged in")
+        self.player?.playSpotifyURI("spotify:track:\(songid)", startingWith: 0, startingWithPosition: 0, callback: { (error) in
             if (error != nil) {
                 print("playing!")
             }
-            
+
         })
         
     }

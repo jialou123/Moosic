@@ -1,0 +1,6 @@
+module AlamofireObjectMapper [system] {
+  umbrella header "AlamofireObjectMapper-umbrella.h"
+
+  export *
+  module * { export * }
+}

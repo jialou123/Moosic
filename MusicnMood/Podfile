@@ -9,6 +9,7 @@ target 'MusicnMood' do
   pod 'ChameleonFramework'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Spartan'
   
 end
 
