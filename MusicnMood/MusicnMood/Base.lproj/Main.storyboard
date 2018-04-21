@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v38-Ph-dj1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oTA-wk-zSR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="16" y="427" width="343" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.07027173787355423" green="0.82229262590408325" blue="0.19054687023162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -69,7 +69,7 @@
                         <viewControllerLayoutGuide type="top" id="YBa-Qr-Vqw"/>
                         <viewControllerLayoutGuide type="bottom" id="xGY-zg-Fgo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aA6-Gx-9bG">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="aA6-Gx-9bG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -91,7 +91,7 @@
                                 <rect key="frame" x="16" y="425" width="343" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.07027173787355423" green="0.82229262590408325" blue="0.19054687023162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.81000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="0zY-Nd-XoV"/>
                     <connections>
@@ -111,12 +111,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Kq-AQ-g2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1330" y="-1031"/>
+            <point key="canvasLocation" x="-1330.4000000000001" y="-1031.3343328335832"/>
         </scene>
         <!--Me-->
         <scene sceneID="wZ0-RO-rrg">
             <objects>
-                <viewController id="Fpx-nu-t16" sceneMemberID="viewController">
+                <viewController id="Fpx-nu-t16" customClass="MeViewController" customModule="MusicnMood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dgk-qc-WK6"/>
                         <viewControllerLayoutGuide type="bottom" id="SV1-mY-Gub"/>
@@ -125,31 +125,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMp-xX-iLw">
-                                <rect key="frame" x="145" y="299" width="84" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="60"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yb-g6-fB6">
                                 <rect key="frame" x="0.0" y="566" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.073915012180805206" green="0.79666435718536377" blue="0.75118798017501831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="backgroundColor" red="0.48197364807128906" green="0.71346265077590942" blue="0.72157430648803711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" red="0.9911462664604187" green="0.99638539552688599" blue="0.99172276258468628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Logout:" destination="Fpx-nu-t16" eventType="touchUpInside" id="wdo-F4-wlX"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFA-3S-igl">
+                                <rect key="frame" x="62" y="90" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqP-lw-oap">
+                                <rect key="frame" x="0.0" y="517" width="375" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27999591827392578" green="0.48825150728225708" blue="0.57256323099136353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <state key="normal" title="Change My Userpic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="picuserpic:" destination="Fpx-nu-t16" eventType="touchUpInside" id="Pj0-xa-DhC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="    Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMp-xX-iLw">
+                                <rect key="frame" x="16" y="338" width="343" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="0.71915132705479456" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Me" id="MQS-ru-dr5"/>
+                    <tabBarItem key="tabBarItem" title="Me" id="MQS-ru-dr5" colorLabel="IBBuiltInLabel-Red"/>
                     <navigationItem key="navigationItem" id="r9E-Nm-Qh0"/>
+                    <connections>
+                        <outlet property="useremail" destination="UMp-xX-iLw" id="ydx-oD-FzY"/>
+                        <outlet property="userpic" destination="gFA-3S-igl" id="UuM-DZ-9I2"/>
+                        <segue destination="oTA-wk-zSR" kind="show" identifier="signout" id="EA6-3n-PhJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="He6-w6-S4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="-2301"/>
+            <point key="canvasLocation" x="685.60000000000002" y="-2301.4992503748126"/>
         </scene>
         <!--mapviewcontroller-->
         <scene sceneID="Hgb-gA-oyc">
@@ -187,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9m-ua-k3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533.5999999999999" y="64.31784107946028"/>
+            <point key="canvasLocation" x="1534" y="64"/>
         </scene>
         <!--NearbyTableViewController-->
         <scene sceneID="h8b-sV-4eO">
@@ -219,9 +243,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Noj-fM-WTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376.8000000000002" y="63.418290854572717"/>
+            <point key="canvasLocation" x="2377" y="63"/>
         </scene>
-        <!--Mood-->
+        <!--Mood Scan View Controller-->
         <scene sceneID="VaD-Vj-emE">
             <objects>
                 <viewController id="K7E-j5-rSF" customClass="MoodScanViewController" customModule="MusicnMood" customModuleProvider="target" sceneMemberID="viewController">
@@ -233,12 +257,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4Q-Kq-b6w">
-                                <rect key="frame" x="16" y="122" width="182" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2h-aR-Pfc">
-                                <rect key="frame" x="117" y="491" width="141" height="37"/>
+                                <rect key="frame" x="117" y="476" width="141" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9911462664604187" green="0.99638539552688599" blue="0.99172276258468628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Take a picture"/>
@@ -247,7 +267,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDH-z4-8Ab">
-                                <rect key="frame" x="117" y="536" width="141" height="35"/>
+                                <rect key="frame" x="117" y="521" width="141" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97741800546646118" green="0.9931148886680603" blue="0.97068113088607788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Reset"/>
@@ -262,18 +282,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoW-pe-euu">
+                                <rect key="frame" x="117" y="564" width="141" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99590021371841431" green="0.99622505903244019" blue="0.99164611101150513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Moosic !"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZB-7b-XCi">
+                                <rect key="frame" x="117" y="564" width="141" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99590021371841431" green="0.99622505903244019" blue="0.99164611101150513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Moosic !"/>
+                                <connections>
+                                    <action selector="getmusic:" destination="K7E-j5-rSF" eventType="touchUpInside" id="Xah-aA-Mms"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4Q-Kq-b6w">
+                                <rect key="frame" x="31" y="106" width="182" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.76765839041095896" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mood" id="TaS-lQ-wz4"/>
+                    <navigationItem key="navigationItem" id="grR-8h-g0z"/>
                     <connections>
+                        <outlet property="Moosic" destination="2ZB-7b-XCi" id="DWe-YE-lLO"/>
                         <outlet property="faceanalysis" destination="Sux-Iq-nBh" id="Phb-LH-45u"/>
                         <outlet property="userface" destination="q4Q-Kq-b6w" id="8LC-br-AUm"/>
+                        <segue destination="d2S-nY-WU5" kind="show" identifier="fSToSPT" id="Zyx-XG-CwD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOp-38-6b1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685.60000000000002" y="-1475.7121439280361"/>
+            <point key="canvasLocation" x="1533.5999999999999" y="-1476.6116941529237"/>
         </scene>
         <!--MusicViewController-->
         <scene sceneID="voV-mS-md1">
@@ -362,7 +403,7 @@
         <!--View Controller-->
         <scene sceneID="pms-R0-PBf">
             <objects>
-                <viewController id="dx5-hj-uow" sceneMemberID="viewController">
+                <viewController id="dx5-hj-uow" customClass="ViewController" customModule="MusicnMood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dNy-eI-WnC"/>
                         <viewControllerLayoutGuide type="bottom" id="Bog-Ol-lqT"/>
@@ -371,28 +412,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFw-hV-2R3">
-                                <rect key="frame" x="0.0" y="556" width="375" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.89259582757949829" green="0.92211169004440308" blue="0.037509161978960037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="login"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-iR-xhO">
-                                <rect key="frame" x="0.0" y="556" width="375" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.89259582757949829" green="0.92211169004440308" blue="0.037509161978960037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="login"/>
-                                <connections>
-                                    <segue destination="cJl-qR-lvw" kind="push" identifier="toLogin" id="KEt-7M-1dy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR8-q7-MUz">
                                 <rect key="frame" x="0.0" y="612" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90221482515335083" green="0.37911340594291687" blue="0.043014883995056152" alpha="0.68222923801369861" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="register"/>
+                                <color key="backgroundColor" red="0.48197364807128906" green="0.71346265077590942" blue="0.72157430648803711" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <state key="normal" title="register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="tmh-GF-pVZ" kind="push" identifier="toSign" id="hOg-Tc-zJ3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone-6-wallpaper-18" translatesAutoresizingMaskIntoConstraints="NO" id="jme-5i-MAH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-iR-xhO">
+                                <rect key="frame" x="0.0" y="556" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27999591827392578" green="0.48825150728225708" blue="0.57256323099136353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <state key="normal" title="login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cJl-qR-lvw" kind="push" identifier="toLogin" id="KEt-7M-1dy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -402,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bX-po-IlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2356" y="-716"/>
+            <point key="canvasLocation" x="-2356" y="-716.49175412293857"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="u4N-pq-s60">
@@ -411,12 +456,12 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ONX-Ny-C5R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.13448727130889893" green="0.30982926487922668" blue="0.45884257555007935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="Fpx-nu-t16" kind="relationship" relationship="viewControllers" id="TxA-Oi-Ggf"/>
                         <segue destination="itS-h3-JnK" kind="relationship" relationship="viewControllers" id="ewy-2K-Dxo"/>
-                        <segue destination="K7E-j5-rSF" kind="relationship" relationship="viewControllers" id="TnG-D5-g3s"/>
+                        <segue destination="HwO-l1-FXQ" kind="relationship" relationship="viewControllers" id="TnG-D5-g3s"/>
                         <segue destination="umV-qu-TSU" kind="relationship" relationship="viewControllers" id="ONy-kz-Y5G"/>
                     </connections>
                 </tabBarController>
@@ -449,6 +494,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="itS-h3-JnK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Music" id="ejD-cl-XIz"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hv8-dG-Eek"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SRP-qm-OgO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -462,11 +508,32 @@
             </objects>
             <point key="canvasLocation" x="686" y="-716"/>
         </scene>
+        <!--Mood-->
+        <scene sceneID="EyA-Gu-jg4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HwO-l1-FXQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mood" id="TaS-lQ-wz4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CPl-LB-AVD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K7E-j5-rSF" kind="relationship" relationship="rootViewController" id="HKq-0d-krK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yew-vK-0oL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685.60000000000002" y="-1475.7121439280361"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="iphone-6-wallpaper-18" width="511" height="908"/>
         <image name="spotify" width="567" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lNu-3X-Plx"/>
+        <segue reference="Zyx-XG-CwD"/>
     </inferredMetricsTieBreakers>
 </document>

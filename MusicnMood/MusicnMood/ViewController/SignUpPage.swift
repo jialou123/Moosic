@@ -15,7 +15,7 @@ class SignUpPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+          self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iphone-6-wallpaper-18.jpg")!)
         // Do any additional setup after loading the view.
     }
 
@@ -30,8 +30,8 @@ class SignUpPage: UIViewController {
                 print(error!)
             }else{
                 print("registeration success")
+                var user = Auth.auth().currentUser;
                 self.performSegue(withIdentifier: "signUpGoToMe", sender: self)
-                
             }
         }
     }

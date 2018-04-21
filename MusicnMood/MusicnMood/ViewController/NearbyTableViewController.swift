@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NearbyTableViewController: UITableViewController{
 
@@ -19,7 +20,6 @@ class NearbyTableViewController: UITableViewController{
         nearbyTableview.register(UINib(nibName: "nearbyTableViewCell", bundle: nil), forCellReuseIdentifier: "nearbyTableViewCell")
         
        nearbyTableview.rowHeight = 75
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -35,12 +35,18 @@ class NearbyTableViewController: UITableViewController{
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "nearbyTableViewCell", for: indexPath) as! nearbyTableViewCell
+        
         let userarray = ["userasdasdadasdasdasdsadasdasdasdasdasdasdasdas1","useasdaa","user3","asdadd"]
         
         cell.usersong.text = userarray[indexPath.row]
         
         return cell
     }
+    
+    func getnearby(){
+//        Auth.auth().currentUser?.email
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1

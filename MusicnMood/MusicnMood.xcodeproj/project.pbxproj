@@ -14,6 +14,8 @@
 		1B1531832080BA86008BEF54 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1531802080BA85008BEF54 /* SpotifyAudioPlayback.framework */; };
 		1B1531842080BA86008BEF54 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1531812080BA86008BEF54 /* SpotifyAuthentication.framework */; };
 		1B1531A92082B38C008BEF54 /* MoodScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1531A82082B38C008BEF54 /* MoodScanViewController.swift */; };
+		1B2F152A208A064700DC4C25 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2F1529208A064700DC4C25 /* MeViewController.swift */; };
+		1B2F152C208AABA200DC4C25 /* NearbyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2F152B208AABA200DC4C25 /* NearbyModel.swift */; };
 		1B5DFDA420768D1B007E5104 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DFDA320768D1B007E5104 /* MapViewController.swift */; };
 		1B62117620796DD300DF6B2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B62117520796DD300DF6B2F /* GoogleService-Info.plist */; };
 		1B62117C2079A5F300DF6B2F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B62117B2079A5F300DF6B2F /* LoginController.swift */; };
@@ -58,6 +60,8 @@
 		1B1531802080BA85008BEF54 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		1B1531812080BA86008BEF54 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
 		1B1531A82082B38C008BEF54 /* MoodScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodScanViewController.swift; sourceTree = "<group>"; };
+		1B2F1529208A064700DC4C25 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		1B2F152B208AABA200DC4C25 /* NearbyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyModel.swift; sourceTree = "<group>"; };
 		1B5DFDA320768D1B007E5104 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1B62117520796DD300DF6B2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B62117B2079A5F300DF6B2F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -127,14 +131,15 @@
 		1BC874AC207E14F500E1A1AC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1B62117B2079A5F300DF6B2F /* LoginController.swift */,
-				1B5DFDA320768D1B007E5104 /* MapViewController.swift */,
+				1B15317B2080B13F008BEF54 /* MusicnMood-Bridging-Header.h */,
 				2979B817206C46DC00DC88FC /* ViewController.swift */,
+				1B62117B2079A5F300DF6B2F /* LoginController.swift */,
 				2979B847206C4F5D00DC88FC /* SignUpPage.swift */,
+				1B5DFDA320768D1B007E5104 /* MapViewController.swift */,
 				1B867616207E19E100DD3735 /* NearbyTableViewController.swift */,
 				1B1531792080B113008BEF54 /* MusicViewController.swift */,
-				1B15317B2080B13F008BEF54 /* MusicnMood-Bridging-Header.h */,
 				1B1531A82082B38C008BEF54 /* MoodScanViewController.swift */,
+				1B2F1529208A064700DC4C25 /* MeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -174,9 +179,9 @@
 				1B1531802080BA85008BEF54 /* SpotifyAudioPlayback.framework */,
 				1B1531812080BA86008BEF54 /* SpotifyAuthentication.framework */,
 				1B15317F2080BA85008BEF54 /* SpotifyMetadata.framework */,
+				1BC874AC207E14F500E1A1AC /* ViewController */,
 				1B867618207E1BDB00DD3735 /* custome cell */,
 				1BC874AD207E156600E1A1AC /* plist */,
-				1BC874AC207E14F500E1A1AC /* ViewController */,
 				2979B815206C46DC00DC88FC /* AppDelegate.swift */,
 				2979B819206C46DC00DC88FC /* Main.storyboard */,
 				1B62117520796DD300DF6B2F /* GoogleService-Info.plist */,
@@ -184,6 +189,7 @@
 				2979B81E206C46DC00DC88FC /* LaunchScreen.storyboard */,
 				2979B81C206C46DC00DC88FC /* Assets.xcassets */,
 				1BAD63B52086112B007A1BDB /* FaceAnalysisModel.swift */,
+				1B2F152B208AABA200DC4C25 /* NearbyModel.swift */,
 			);
 			path = MusicnMood;
 			sourceTree = "<group>";
@@ -408,10 +414,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2979B848206C4F5D00DC88FC /* SignUpPage.swift in Sources */,
+				1B2F152A208A064700DC4C25 /* MeViewController.swift in Sources */,
 				2979B818206C46DC00DC88FC /* ViewController.swift in Sources */,
 				1BAD63B62086112B007A1BDB /* FaceAnalysisModel.swift in Sources */,
 				1B867617207E19E100DD3735 /* NearbyTableViewController.swift in Sources */,
 				1B1531A92082B38C008BEF54 /* MoodScanViewController.swift in Sources */,
+				1B2F152C208AABA200DC4C25 /* NearbyModel.swift in Sources */,
 				2979B816206C46DC00DC88FC /* AppDelegate.swift in Sources */,
 				1B15317A2080B113008BEF54 /* MusicViewController.swift in Sources */,
 				1B86761F207E2AA600DD3735 /* nearbyTableViewCell.swift in Sources */,

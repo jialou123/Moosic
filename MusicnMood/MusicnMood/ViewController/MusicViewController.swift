@@ -13,7 +13,7 @@ import Spartan
 
 class MusicViewController:
     
-UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate {
+UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate{
 
     @IBOutlet weak var More: UIBarButtonItem!
     @IBOutlet weak var spotify: UIButton!
@@ -21,8 +21,8 @@ UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate {
     var session:SPTSession!
     var player: SPTAudioStreamingController?
     var loginUrl: URL?
-    var songid: String = "58s6EuEYJdlb0kO7awm3Vp"
-   // public static var authorizationToken: String = "..."
+    var songid: String = "1qowUCis8gYY9KOMuy8fCi"
+    var searchquery:String = "wrong"
     
     @IBAction func spotifylogin(_ sender: UIButton) {
 //        let loginURL = SPTAuth.loginURL(forClientId: "2cf1d030727646deb8d901a1f8e7a1aa", withRedirectURL: NSURL(string: "Moosic://returnafterlogin")! as URL, scopes: [SPTAuthStreamingScope], responseType:"token")
@@ -47,11 +47,13 @@ UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iphone-6-wallpaper-18.jpg")!)
         self.More.isEnabled = false
         setup()
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(MusicViewController.updateAfterFirstLogin), name: NSNotification.Name(rawValue: "loginSuccessfull"), object: nil)
     }
+    
     
     @objc func updateAfterFirstLogin () {
         guard let sessionObj = UserDefaults.standard.value(forKey: "SpotifySession") as Any? else { return }
@@ -60,16 +62,19 @@ UIViewController,SPTAudioStreamingDelegate,SPTAudioStreamingPlaybackDelegate {
         self.session = firstTimeSession
         initializePlayer(authSession: session)
         Spartan.authorizationToken =  session.accessToken
-        _ = Spartan.search(query: "shape of you", type: .track, success: { (pagingObject: PagingObject<SimplifiedTrack>) in
+        print("----------------")
+        print(searchquery)
+        
+        _ = Spartan.search(query: searchquery, type: .track, success: { (pagingObject: PagingObject<SimplifiedTrack>) in
             // Get the tracks via pagingObject.items
-            print("1")
+           // print("1")
             print(pagingObject.items[0].id)
             self.songid = pagingObject.items[0].id as! String
         }, failure: { (error) in
             print(error)
         })
         self.spotify.isHidden  = true
-         self.More.isEnabled = true
+        self.More.isEnabled = true
     }
         
     func initializePlayer(authSession:SPTSession){

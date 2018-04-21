@@ -11,20 +11,49 @@ import Alamofire
 import SwiftyJSON
 import Photos
 
+//protocol sendmood {
+//    func moodreceived(data:String)
+//}
+
 class MoodScanViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
    
     @IBOutlet weak var faceanalysis: UILabel!
     @IBOutlet weak var userface: UIImageView!
+    @IBOutlet weak var Moosic: UIButton!
     
     var imagePicker: UIImagePickerController!
     let faceAnalysisModel = FaceAnalysisModel()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.Moosic.isHidden = true
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "iphone-6-wallpaper-18.jpg")!)
         // Do any additional setup after loading the view.
     }
-
+    
+    
+    @IBAction func getmusic(_ sender: Any) {
+        performSegue(withIdentifier: "fSToSPT", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "fSToSPT"{
+            let moodtomusic = segue.destination as! MusicViewController
+            var max : Double = 0
+            var maxmood : String = ""
+            if faceAnalysisModel.anger > max{max = faceAnalysisModel.anger; maxmood = "anger"}
+            if faceAnalysisModel.fear > max{max = faceAnalysisModel.fear;maxmood = "fear"}
+            if faceAnalysisModel.surprise > max{max = faceAnalysisModel.surprise;maxmood = "surprise"}
+            if faceAnalysisModel.contempt > max{max = faceAnalysisModel.contempt;maxmood = "contempt"}
+            if faceAnalysisModel.disgust > max{max = faceAnalysisModel.disgust;maxmood = "disgust"}
+            if faceAnalysisModel.neutral > max{max = faceAnalysisModel.neutral;maxmood = "neutral"}
+            if faceAnalysisModel.happiness > max{max = faceAnalysisModel.happiness;maxmood = "happy"}
+            if faceAnalysisModel.sadness > max{max = faceAnalysisModel.sadness;maxmood = "sad"}
+            moodtomusic.searchquery = maxmood
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -43,7 +72,6 @@ class MoodScanViewController: UIViewController, UIImagePickerControllerDelegate,
         imagePicker.allowsEditing = true
         self.present(imagePicker, animated: true, completion: nil)
         
-       // self.presentedViewController
     }
     @IBAction func resetFace(_ sender: UIButton) {
          facemodelreset()
@@ -72,16 +100,18 @@ class MoodScanViewController: UIViewController, UIImagePickerControllerDelegate,
                 self.parseJson(json: faceJson)
                 print(faceJson)
             }.resume()
-            sleep(3)
-            if faceAnalysisModel.invalid {
-                faceanalysis.text = "Invalid Face"
-            }
-            else{
-            faceanalysis.text = "Anger:\(faceAnalysisModel.anger)\n Fear:\(faceAnalysisModel.fear)\n Suprise:\(faceAnalysisModel.surprise)\n Contempt:\(faceAnalysisModel.contempt)\n Disgust:\(faceAnalysisModel.disgust)\n Happiness:\(faceAnalysisModel.happiness)\n Neutral:\(faceAnalysisModel.neutral)\n Sadness:\(faceAnalysisModel.sadness)\n Age:\(faceAnalysisModel.age)\n Gender:\(faceAnalysisModel.gender)"
-            }
-            
     }
-        picker.dismiss(animated: true, completion: nil)
+    
+    picker.dismiss(animated: true, completion: nil)
+    sleep(5)
+    if faceAnalysisModel.invalid {
+        faceanalysis.text = "Invalid Face"
+    }
+    else{
+        faceanalysis.text = "Anger:\(faceAnalysisModel.anger)\n Fear:\(faceAnalysisModel.fear)\n Suprise:\(faceAnalysisModel.surprise)\n Contempt:\(faceAnalysisModel.contempt)\n Disgust:\(faceAnalysisModel.disgust)\n Happiness:\(faceAnalysisModel.happiness)\n Neutral:\(faceAnalysisModel.neutral)\n Sadness:\(faceAnalysisModel.sadness)\n Age:\(faceAnalysisModel.age)\n Gender:\(faceAnalysisModel.gender)\n Bald:\(faceAnalysisModel.bald)Cote"
+            self.Moosic.isHidden = false
+        
+    }
     }
     
     func facemodelreset(){
@@ -95,6 +125,7 @@ class MoodScanViewController: UIViewController, UIImagePickerControllerDelegate,
         faceAnalysisModel.neutral = 0.0
         faceAnalysisModel.sadness = 0.0
         faceAnalysisModel.gender = ""
+        faceAnalysisModel.bald = 0.0
         faceAnalysisModel.invalid = true
     }
     
@@ -110,7 +141,7 @@ class MoodScanViewController: UIViewController, UIImagePickerControllerDelegate,
         let happiness = json[0]["faceAttributes"]["emotion"]["happiness"].doubleValue
         let neutral = json[0]["faceAttributes"]["emotion"]["neutral"].doubleValue
         let sadness = json[0]["faceAttributes"]["emotion"]["sadness"].doubleValue
-        //let bald = json[0]["faceAttributes"]["hair"]["bald"].double
+        let bald = json[0]["faceAttributes"]["hair"]["bald"].doubleValue
         let age = json[0]["faceAttributes"]["age"].doubleValue
         let gender = json[0]["faceAttributes"]["gender"].stringValue
        faceAnalysisModel.age = age
@@ -123,7 +154,7 @@ class MoodScanViewController: UIViewController, UIImagePickerControllerDelegate,
        faceAnalysisModel.neutral = neutral
        faceAnalysisModel.sadness = sadness
        faceAnalysisModel.gender = gender
-       //faceAnalysisModel.bald = bald
+       faceAnalysisModel.bald = bald
         }
         else{
             //faceanalysis.text = "Invalid Face"
